@@ -1,0 +1,13 @@
+﻿@model Pie
+
+<div class="thumbnail" style="margin-top:30px">
+    <img alt="@Model.Name" src="@Model.ImageUrl" style="width:1000px;height:500px;filter: blur(2px)"/>
+    <div class="caption">
+        <h3 class="pull-right">@Model.Price.ToString("c")</h3>
+        <h3>
+            <a href="#">@Model.Name</a>
+        </h3>
+        <h4>@Model.ShortDescription</h4>
+        <p style="margin-top:20px">@Model.LongDescription</p>
+    </div>
+</div>
